@@ -304,7 +304,7 @@ A reproduction in phyloseq / R of the main panel of Figure 5 from the "Global Pa
 
 
 ### non-metric Multi-Dimensional Scaling (NMDS)
-We repeat the previous example, but instead using non-metric multidimensional scaling (NMDS) limited to just two dimensions. This approach limits the amount of residual distance "not shown" in the first two (or three) axes, but forefeits some mathematical properties and does not always converge within the specified number of axes.
+We repeat the previous example, but instead using non-metric multidimensional scaling (NMDS) limited to just two dimensions. This approach limits the amount of residual distance "not shown" in the first two (or three) axes, but forfeits some mathematical properties and does not always converge within the specified number of axes.
 
 ```{r GP_UF_NMDS0}
 # (Re)load UniFrac distance matrix and GlobalPatterns data
@@ -446,7 +446,7 @@ plot_ordination(GP, GP.dpcoa, type="split",
 
 Many comparisons of microbiome samples, including the graphical model and the PCoA analysis, require a calculation for the relative dissimilarity/distance between one microbial community and another. The phyloseq-package provides a general "wrapper" function for calculating ecological distance matrices between the samples in an experiment. 
 
-`distance()` currently supports 43 method options, as well as user-provided arbitrary methods via an interface to vegan's `designdist()` function. Currrently only sample-wise distances are supported (the `type` argument), but eventually species-wise (OTU-wise) distances will be supported as well. In addition to supporting any of the method options to the three main distance functions of the vegan-package~\cite{veganpkg --- including the 14 distances of the `vegdist()` function and all 24 ecological distances reviewed in Koleff et al. 2003~\cite{Koleff2003JAE coded by `betadiver` --- `distance()` will eventually support many of the distance methods in the ade4-package~\cite{Dray:2007vs, and others. It also supports the Fast UniFrac distance function (Section~\ref{sec:unifrac) included in phyloseq as native R code, and a wrapper for retreiving the sample-distances from Double Principal Coordinate Analysis (DPCoA).
+`distance()` currently supports 43 method options, as well as user-provided arbitrary methods via an interface to vegan's `designdist()` function. Currently only sample-wise distances are supported (the `type` argument), but eventually species-wise (OTU-wise) distances will be supported as well. In addition to supporting any of the method options to the three main distance functions of the vegan-package~\cite{veganpkg --- including the 14 distances of the `vegdist()` function and all 24 ecological distances reviewed in Koleff et al. 2003~\cite{Koleff2003JAE coded by `betadiver` --- `distance()` will eventually support many of the distance methods in the ade4-package~\cite{Dray:2007vs, and others. It also supports the Fast UniFrac distance function (Section~\ref{sec:unifrac) included in phyloseq as native R code, and a wrapper for retrieving the sample-distances from Double Principal Coordinate Analysis (DPCoA).
 
 The function takes a `phyloseq-class` object and an argument indicating the distance type; and it returns a `dist-class distance matrix.
 

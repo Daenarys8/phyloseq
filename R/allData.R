@@ -171,7 +171,7 @@ NA
 #' communities from 25 environmental samples and three known ``mock communities''
 #' -- a total of 9 sample types -- at a depth averaging 3.1 million reads per sample.
 #' Authors were able to reproduce diversity patterns seen in many other 
-#' published studies, while also invesitigating technical issues/bias by 
+#' published studies, while also investigating technical issues/bias by 
 #' applying the same techniques to simulated microbial communities of known
 #' composition.
 #'

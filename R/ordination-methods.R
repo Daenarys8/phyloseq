@@ -42,7 +42,7 @@
 #'           \code{\link{DPCoA}}(), which ultimately uses
 #'           \code{\link[ade4]{dpcoa}} after making the appropriate 
 #'           accessions/corrections of the data.}
-#'     \item{NMDS}{Performs Non-metric MultiDimenstional Scaling of a sample-wise 
+#'     \item{NMDS}{Performs Non-metric Multidimensional Scaling of a sample-wise 
 #'           ecological distance matrix onto a user-specified number of axes, \code{k}.
 #'           By default, \code{k=2}, but this can be modified as a supplementary argument.
 #'           This method is ultimately carried out by \code{\link{metaMDS}} after the 
@@ -80,7 +80,7 @@
 #' @param formula (Optional). A model \code{\link{formula}}.
 #'  Only relevant for certain ordination methods.
 #'  The left hand side is ignored, defined by 
-#'  the \code{physeq} and \code{distance} arguemnts.
+#'  the \code{physeq} and \code{distance} arguments.
 #'  The right hand side gives the constraining variables,
 #'  and conditioning variables can be given 
 #'  within a special function \code{Condition}.
@@ -376,7 +376,7 @@ DPCoA <- function(physeq, correction=cailliez, scannf=FALSE, ...){
 #'  The data on which you want to perform the ordination. 
 #' 
 #' @param formula (Optional). A \code{\link{formula}}, 
-#'  specifying the contraining variable(s) format,
+#'  specifying the containing variable(s) format,
 #'  with variable names corresponding to \code{\link{sample_data}} (RHS)
 #'  from within \code{physeq}.
 #'  

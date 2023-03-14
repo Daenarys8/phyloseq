@@ -126,7 +126,7 @@ make_network <- function(physeq, type="samples", distance="jaccard", max.dist = 
 	    # Convert distance matrix to coincidence matrix, CoMa, using max.dist
 		CoMa <- TaDiMa < max.dist   
 	} else if( type == "samples" ){
-    # Calculate or asign sample-wise distance matrix
+    # Calculate or assign sample-wise distance matrix
 	  if( class(distance) == "dist" ){ # If argument is already a distance matrix.
 	    # If distance a distance object, use it rather than re-calculate
 	    obj.dist <- distance

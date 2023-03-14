@@ -111,7 +111,7 @@ the information in your data input files.
 The reason for this boggles me,
 and I've shared my views on this with QIIME developers,
 but there nevertheless seems to be no plan to include your sample data
-in the ouput biom file.
+in the output biom file.
 
 Furthermore, even though I have proposed it to the biom-format team,
 there is currently no support (or timeline for support) 
@@ -552,7 +552,7 @@ which offers complete
 as a fee-for-service.
 In some cases Second Genome clients already have their microbiome data
 and want to make use of our team of trained microbiome analysts 
-to get the most information from their expeirment.
+to get the most information from their experiment.
 I recommend contacting one of the sales associates at the link above.
 
 My day-to-day efforts are in understanding the role of the microbiome

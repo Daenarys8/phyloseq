@@ -19,7 +19,7 @@
 #'  only the first letter is necessary.
 #'
 #' @param ... (Required). Additional named arguments providing file paths, and possible
-#'  other paramaters to the desired tool-specific import function.
+#'  other parameters to the desired tool-specific import function.
 #'
 #' @return In most cases a \code{\link{phyloseq-class}} will be returned, though
 #'  the included component data will vary by pipeline/tool, and also
@@ -200,7 +200,7 @@ import <- function(pipelineName, ...){
 #'  
 #' @param verbose (Optional). A \code{\link{logical}}.
 #'  Default is \code{TRUE}. 
-#'  Should progresss messages
+#'  Should progress messages
 #'  be \code{\link{cat}}ted to standard out?
 #'
 #' @param ... Additional arguments passed to \code{\link{read_tree}}
@@ -610,7 +610,7 @@ import_qiime_sample_data <- function(mapfilename){
 #'
 #' @usage import_env_file(envfilename, tree=NULL, sep="\t", ...)
 #'
-#' @param envfilename (Required). A charater string of the ENV filename (relative or absolute)
+#' @param envfilename (Required). A character string of the ENV filename (relative or absolute)
 #'
 #' @param tree (Optional). \code{\link{phylo-class}} object to be paired with
 #'  the output otu_table. 
@@ -707,7 +707,7 @@ envHash2otu_table <- function(tipSampleTable){
 #'
 #' The cluster file itself contains
 #' the names of all sequences contained in input alignment. If the upstream
-#' barcode and aligment processing steps are also done with the RDP pipeline,
+#' barcode and alignment processing steps are also done with the RDP pipeline,
 #' then the sequence names follow a predictable naming convention wherein each
 #' sequence is named by its sample and sequence ID, separated by a \code{"_"} as
 #' delimiter:
@@ -1024,7 +1024,7 @@ show_mothur_cutoffs <- function(mothur_list_file){
 #'
 #' This is a user-available module of a more comprehensive function for importing
 #' OTU clustering/abundance data using the \emph{mothur} package. The list object
-#' returned by this function is not immediately useable by other \emph{phyloseq}
+#' returned by this function is not immediately usable by other \emph{phyloseq}
 #' functions, and must be first parsed in conjunction with a separate \emph{mothur}
 #' \code{"group"} file. This function is made accessible to \emph{phyloseq} users
 #' for troubleshooting and inspection, but the \code{link{import_mothur()}} function
@@ -1104,7 +1104,7 @@ select_mothur_cutoff = function(cutoff, cutoffs){
 #' Parse mothur group file into a simple hash table.
 #'
 #' The data.frame object
-#' returned by this function is not immediately useable by other \emph{phyloseq}
+#' returned by this function is not immediately usable by other \emph{phyloseq}
 #' functions, and must be first parsed in conjunction with a separate \emph{mothur}
 #' \code{"list"} file. This function is made accessible to \emph{phyloseq} users
 #' for troubleshooting and inspection, but the \code{link{import_mothur()}} function
@@ -1444,7 +1444,7 @@ import_mothur_dist <- function(mothur_dist_file){
 #' The purpose of this function is to allow a user to easily export a distance object
 #' as a pair of files that can be immediately imported by mothur for OTU clustering
 #' and related analysis. A distance object can be created in \code{R} in a number of
-#' ways, including via cataloguing the cophentic distances of a tree object.
+#' ways, including via cataloging the cophentic distances of a tree object.
 #'
 #' @usage export_mothur_dist(x, out=NULL, makeTrivialNamesFile=NULL)
 #'
@@ -1884,7 +1884,7 @@ import_biom <- function(BIOMfilename,
 #' the name of the phylum to which this OTU belongs).
 #' Most importantly, the expectations for these functions described above
 #' make them compatible to use during data import,
-#' specifcally the \code{\link{import_biom}} function, but 
+#' specifically the \code{\link{import_biom}} function, but 
 #' it is a flexible structure that will be implemented soon for all phyloseq
 #' import functions that deal with taxonomy (e.g. \code{\link{import_qiime}}).
 #'
@@ -2212,7 +2212,7 @@ microbio_me_qiime = function(zipftp, ext=".zip", parsef=parse_taxonomy_greengene
 #' Import usearch table format (\code{.uc}) to OTU table
 #' 
 #' UPARSE is an algorithm for OTU-clustering implemented within usearch.
-#' At last check, the UPARSE algortihm was accessed via the 
+#' At last check, the UPARSE algorithm was accessed via the 
 #' \code{-cluster_otu} option flag.
 #' For details about installing and running usearch, please refer to the
 #' \href{http://drive5.com/usearch/}{usearch website}.
@@ -2273,7 +2273,7 @@ microbio_me_qiime = function(zipftp, ext=".zip", parsef=parse_taxonomy_greengene
 #'  
 #' @param verbose (Optional). A \code{\link{logical}}.
 #'  Default is \code{TRUE}. 
-#'  Should progresss messages
+#'  Should progress messages
 #'  be \code{\link{cat}}ted to standard out?
 #' 
 #' @importFrom data.table fread
@@ -2319,7 +2319,7 @@ import_usearch_uc <- function(ucfile, colRead=9, colOTU=10,
 #' Import \href{http://www.drive5.com/usearch/manual/opt_uparseout.html}{UPARSE file format}
 #' 
 #' UPARSE is an algorithm for OTU-clustering implemented within usearch.
-#' At last check, the UPARSE algortihm was accessed via the 
+#' At last check, the UPARSE algorithm was accessed via the 
 #' \code{-cluster_otu} option flag.
 #' For details about installing and running usearch, please refer to the
 #' \href{http://drive5.com/usearch/}{usearch website}.

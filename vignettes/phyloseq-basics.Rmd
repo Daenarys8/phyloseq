@@ -148,7 +148,7 @@ and works with the BIOM files output from QIIME, RDP, MG-RAST, etc.
 
 The default output from modern versions of QIIME 
 is a BIOM-format file (among others).
-This is suppored in phyloseq.
+This is supported in phyloseq.
 
 ### Sample data from QIIME
 
@@ -537,7 +537,7 @@ data(GlobalPatterns)
 ex2 <- transform_sample_counts(GlobalPatterns, I)
 ```
 
-For certain kinds of analyis we may want to transform the abundance data. For example, for RDA we want to transform abundance counts to within-sample ranks, and to further include a threshold beyond which all taxa receive the same rank value. The ranking for each sample is performed independently, so that the rank of a particular taxa within a particular sample is not influenced by that sample's total quantity of sequencing relative to the other samples in the project. 
+For certain kinds of analysis we may want to transform the abundance data. For example, for RDA we want to transform abundance counts to within-sample ranks, and to further include a threshold beyond which all taxa receive the same rank value. The ranking for each sample is performed independently, so that the rank of a particular taxa within a particular sample is not influenced by that sample's total quantity of sequencing relative to the other samples in the project. 
 
 The following example shows how to perform such a thresholded-rank transformation of the abundance table in the complex *phyloseq* object `GlobalPatterns` with an arbitrary threshold of 500.
 

@@ -117,7 +117,7 @@ setMethod("plot_phyloseq", "phyloseq", function(physeq, ...){
 #' 
 #' @param label (Optional). Default \code{"value"}.
 #'  The name of the sample variable in \code{physeq} to use for 
-#'  labelling the vertex points.
+#'  labeling the vertex points.
 #' 
 #' @param hjust (Optional). Default \code{1.35}.
 #'  The amount of horizontal justification to use for each label.
@@ -312,7 +312,7 @@ plot_network <- function(g, physeq=NULL, type="samples",
 #'  
 #' @param laymeth (Optional). Default \code{"fruchterman.reingold"}.
 #'  A character string that indicates the method that will determine
-#'  the placement of vertices, typically based on conectedness of vertices
+#'  the placement of vertices, typically based on connectedness of vertices
 #'  and the number of vertices.
 #'  This is an interesting topic, and there are lots of options.
 #'  See \code{\link{igraph-package}} for related topics in general, 
@@ -1221,7 +1221,7 @@ rp.joint.fill <- function(DF, map.var, id.type.rp="samples"){
 #'       than or equal to \code{1}, then all but \code{threshold} number 
 #'       of points farthest from the origin are removed. Otherwise, if
 #'       \code{threshold} is less than \code{1}, all but \code{threshold}
-#'       fraction of points farthests from origin are retained.
+#'       fraction of points farthest from origin are retained.
 #'    }
 #' 
 #'    \item{radial}{
@@ -1401,7 +1401,7 @@ extract_eigenvalue.decorana = function(ordination) ordination$evals
 #' should be an empty vector
 #' (e.g. \code{intersect(sample_variables(physeq), rank_names(physeq))}).
 #' All of these potential name collisions are checked-for
-#' and renamed automtically with a warning. 
+#' and renamed automatically with a warning. 
 #' However, if you (re)name your variables accordingly ahead of time,
 #' it will reduce confusion and eliminate the warnings.
 #' 
@@ -1586,7 +1586,7 @@ psmelt = function(physeq){
 #' @param facet_grid (Optional). A formula object.
 #'  It should describe the faceting you want in exactly the same way as for 
 #'  \code{\link[ggplot2]{facet_grid}}, 
-#'  and is ulitmately provided to \code{\link{ggplot}}2 graphics.
+#'  and is ultimately provided to \code{\link{ggplot}}2 graphics.
 #'  The default is: \code{NULL}, resulting in no faceting.
 #'
 #' @param title (Optional). Default \code{NULL}. Character string.
@@ -2478,11 +2478,11 @@ RadialTheta <- function(pos){
 #'  The default is \code{\link{log_trans}(4)}.
 #'
 #' @param max.label (Optional). Integer. Default is 250.
-#'  The maximum number of labeles to fit on a given axis (either x or y). 
+#'  The maximum number of labels to fit on a given axis (either x or y). 
 #'  If number of taxa or samples exceeds this value, 
 #'  the corresponding axis will be stripped of any labels. 
 #'
-#'  This supercedes any arguments provided to
+#'  This supersedes any arguments provided to
 #'  \code{sample.label} or \code{taxa.label}.
 #'  Make sure to increase this value if, for example,
 #'  you want a special label
@@ -2512,7 +2512,7 @@ RadialTheta <- function(pos){
 #'  of your input data (\code{physeq}). 
 #'  It will become the left-most sample in the plot.
 #'  For the ordination-based ordering (recommended),
-#'  the left and right edges of the axes are adjaacent in a continuous ordering. 
+#'  the left and right edges of the axes are adjacent in a continuous ordering. 
 #'  Therefore, the choice of starting sample is meaningless and arbitrary,
 #'  but it is aesthetically poor to have the left and right edge split 
 #'  a natural cluster in the data.

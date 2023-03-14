@@ -24,7 +24,7 @@
 #' # otu_table(ex2b) <- OTU
 #' # identical(ex2a, ex2b)
 #' # print(ex2b)
-#' # # Relace otu_table by implying the component in context.
+#' # # Replace otu_table by implying the component in context.
 #' # ex2c <- GlobalPatterns
 #' # otu_table(ex2c) <- ex2b
 #' # identical(ex2a, ex2c)
@@ -96,7 +96,7 @@ setMethod("taxa_are_rows<-", c("phyloseq", "logical"), function(x, value){
 #' Internally, this re-builds the \code{\link{phyloseq-class}} object using
 #' the standard \code{\link{phyloseq}} constructor. Thus, index mismatches
 #' between sample-describing components will not be allowed, and subsetting
-#' will occurr automatically such that only the intersection of sample IDs
+#' will occur automatically such that only the intersection of sample IDs
 #' are included in any components. This has the added benefit of re-checking
 #' (internally) for any other issues.
 #'
@@ -173,7 +173,7 @@ setMethod("tax_table<-", c("phyloseq", "ANY"), function(x, value){
 #' @rdname assign-tax_table
 #' @aliases tax_table<-,taxonomyTable,taxonomyTable-method
 setMethod("tax_table<-", c("taxonomyTable", "taxonomyTable"), function(x, value){
-	# Asign as-is.
+	# Assign as-is.
 	value
 })
 #' @rdname assign-tax_table
@@ -253,7 +253,7 @@ setMethod("taxa_names<-", c("ANY", "ANY"), function(x, value){
   taxa_names(x) <- as(value, "character")
   return(x)
 })
-# value is now character, but no specific method for first argumet
+# value is now character, but no specific method for first argument
 # return x unchanged.
 #' @rdname assign-taxa_names
 #' @aliases taxa_names<-,ANY,character-method
@@ -341,7 +341,7 @@ setMethod("sample_names<-", c("ANY", "ANY"), function(x, value){
 	sample_names(x) <- as(value, "character")
 	return(x)
 })
-# value is now character, but no specific method for first argumet
+# value is now character, but no specific method for first argument
 # return x unchanged.
 #' @rdname assign-sample_names
 #' @aliases sample_names<-,ANY,character-method

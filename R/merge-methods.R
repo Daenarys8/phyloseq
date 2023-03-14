@@ -16,7 +16,7 @@
 #'
 #' Merges are performed by first separating higher-order objects into
 #' a list of their component objects; then, merging any component objects of the same class
-#' into one object according to the behavior desribed in \code{\link{merge_phyloseq_pair}};
+#' into one object according to the behavior described in \code{\link{merge_phyloseq_pair}};
 #' and finally, building back up a merged-object according to the constructor
 #' behavior of the \code{\link{phyloseq}} method. If the arguments contain only a single
 #' component type -- several otu_table objects, for example -- then a single merged object
@@ -28,7 +28,7 @@
 #'
 #' @return Merges are performed by first separating higher-order objects into
 #' a list of their component objects; then, merging any component objects of the same class
-#' into one object according to the behavior desribed in \code{\link{merge_phyloseq_pair}};
+#' into one object according to the behavior described in \code{\link{merge_phyloseq_pair}};
 #' and finally, re-building a merged-object according to the constructor
 #' behavior of the \code{\link{phyloseq}} method. If the arguments contain only a single
 #' component type -- several otu_table objects, for example -- then a single merged object
@@ -313,7 +313,7 @@ merge_taxa.indices.internal = function(x, eqtaxa, archetype){
 		keepIndex = which(taxa_names(x) %in% archetype[1L])
 	} else {
 		# Else archetype is the numeric index of the eqtaxa that should be kept.
-		# Need to grab from unmodifed eqtaxa, and then decide
+		# Need to grab from unmodified eqtaxa, and then decide
 		archetype = eqtaxa[as.integer(archetype[1L])]
 		if( is.character(archetype) ){
 			# If archetype is now an OTU name, find the index and assign to keepIndex		

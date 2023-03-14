@@ -41,7 +41,7 @@ test_that("Counts from merged-samples are summed...", {
 	OTUnames10 = names(sort(taxa_sums(GP), TRUE)[1:10])
 	GP10  = prune_taxa(OTUnames10,  GP)
 	mGP10 = prune_taxa(OTUnames10, mGP)
-	# Loop to check the correct summation has occured for all OTUs.
+	# Loop to check the correct summation has occurred for all OTUs.
 	for( i in OTUnames10 ){
 		isum = as(tapply(get_sample(GP10, i), get_variable(GP10, "SampleType"), sum), "numeric")
 		expect_that(isum, is_equivalent_to(get_sample(mGP10, i)))
